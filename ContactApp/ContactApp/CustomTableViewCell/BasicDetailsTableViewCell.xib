@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicDetailsTableViewCell" rowHeight="95" id="KGk-i7-Jjw" customClass="BasicDetailsTableViewCell" customModule="ContactApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftV-2R-AR2">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="104.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact" translatesAutoresizingMaskIntoConstraints="NO" id="qF0-9r-AKz">
+                                <rect key="frame" x="6" y="10" width="59" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="KPq-3s-sd9"/>
+                                    <constraint firstAttribute="height" constant="60" id="Y5E-sa-ULZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qF0-9r-AKz" firstAttribute="centerX" secondItem="ftV-2R-AR2" secondAttribute="centerX" id="SBr-Vu-HTI"/>
+                            <constraint firstAttribute="width" constant="70" id="cKn-5Y-kX6"/>
+                            <constraint firstItem="qF0-9r-AKz" firstAttribute="top" secondItem="ftV-2R-AR2" secondAttribute="top" constant="10" id="m4F-tq-Z5I"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vLB-ij-DbR">
+                        <rect key="frame" x="80" y="11" width="250" height="73"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-cp-BVR">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Bkl-PO-n8k"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-vu-XAL">
+                                <rect key="frame" x="0.0" y="26" width="250" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jtk-B7-UWb">
+                                <rect key="frame" x="0.0" y="52" width="250" height="21"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ftV-2R-AR2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2g5-l2-BhM"/>
+                    <constraint firstAttribute="bottom" secondItem="ftV-2R-AR2" secondAttribute="bottom" id="9hc-ji-lOO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vLB-ij-DbR" secondAttribute="bottom" constant="10" id="MWu-4S-Ft6"/>
+                    <constraint firstItem="vLB-ij-DbR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Zbu-Lj-YFv"/>
+                    <constraint firstItem="vLB-ij-DbR" firstAttribute="leading" secondItem="ftV-2R-AR2" secondAttribute="trailing" constant="10" id="nv8-ya-CqI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vLB-ij-DbR" secondAttribute="trailing" id="wgv-VW-D70"/>
+                    <constraint firstItem="ftV-2R-AR2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="x22-kw-JV8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ImageView" destination="qF0-9r-AKz" id="Apo-zf-Txz"/>
+                <outlet property="emailTextField" destination="Jtk-B7-UWb" id="06S-zg-lvr"/>
+                <outlet property="firstNameTextField" destination="v2Q-cp-BVR" id="GtN-Gd-TlC"/>
+                <outlet property="lastNameTextField" destination="2Qh-vu-XAL" id="GNk-Uf-UrO"/>
+            </connections>
+            <point key="canvasLocation" x="-63" y="155.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="contact" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UId-HJ-JCv">
+                                <rect key="frame" x="164" y="94" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UId-HJ-JCv" secondAttribute="height" multiplier="47:21" id="pVc-sx-MLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scores: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz2-rr-pGB">
+                                <rect key="frame" x="156.66666666666666" y="707" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hz2-rr-pGB" secondAttribute="height" multiplier="62:21" id="rxd-y1-KfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COa-KH-Seg">
+                                <rect key="frame" x="137.66666666666666" y="386" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.91475182341682659" green="0.93317833863781108" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="4FD-my-gD9"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="DB2-L1-DuN"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="500" constant="100" id="EU9-cg-uQc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="UTb-Hi-NMB"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <action selector="scoreCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHk-iV-Jl9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UId-HJ-JCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="250" constant="50" id="43G-Ji-Znw"/>
+                            <constraint firstItem="Hz2-rr-pGB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kfg-ti-zM8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hz2-rr-pGB" secondAttribute="bottom" constant="50" id="MWW-5B-TIO"/>
+                            <constraint firstItem="COa-KH-Seg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SIt-nl-rcF"/>
+                            <constraint firstItem="UId-HJ-JCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eqi-JK-ed6"/>
+                            <constraint firstItem="COa-KH-Seg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jtV-AV-jTW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="COa-KH-Seg" id="Ubp-bh-pJR"/>
+                        <outlet property="score" destination="Hz2-rr-pGB" id="za7-Dh-gI6"/>
+                        <outlet property="timeLeft" destination="UId-HJ-JCv" id="enR-0J-w2v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

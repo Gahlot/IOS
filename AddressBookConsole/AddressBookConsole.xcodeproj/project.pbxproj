@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8CC5F9217F26DA00CE6E00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC5F8217F26DA00CE6E00 /* main.swift */; };
+		CA8CC613217F3EA900CE6E00 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC605217F27FE00CE6E00 /* Contact.swift */; };
+		CA8CC614217F3F4E00CE6E00 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC607217F281B00CE6E00 /* AddressBook.swift */; };
+		CA8CC616217F48F700CE6E00 /* ContactExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC615217F48F700CE6E00 /* ContactExtensions.swift */; };
+		CA8CC619217F4F7A00CE6E00 /* ContactDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC60D217F288800CE6E00 /* ContactDictionary.swift */; };
+		CA9FDB4B2180339F0009D046 /* SortContactExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FDB4A2180339F0009D046 /* SortContactExtensions.swift */; };
+		CA9FDB4D2180373C0009D046 /* AddressBookExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FDB4C2180373C0009D046 /* AddressBookExtentions.swift */; };
+		CA9FDB4E2180385A0009D046 /* SortContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC60B217F286900CE6E00 /* SortContact.swift */; };
+		CA9FDB4F21804E150009D046 /* SearchContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CC609217F284F00CE6E00 /* SearchContact.swift */; };
+		CA9FDB51218051260009D046 /* SearchContactExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FDB50218051260009D046 /* SearchContactExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA8CC5F3217F26DA00CE6E00 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA8CC5F5217F26DA00CE6E00 /* AddressBookConsole */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AddressBookConsole; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CC5F8217F26DA00CE6E00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CA8CC605217F27FE00CE6E00 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CA8CC607217F281B00CE6E00 /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		CA8CC609217F284F00CE6E00 /* SearchContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContact.swift; sourceTree = "<group>"; };
+		CA8CC60B217F286900CE6E00 /* SortContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortContact.swift; sourceTree = "<group>"; };
+		CA8CC60D217F288800CE6E00 /* ContactDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDictionary.swift; sourceTree = "<group>"; };
+		CA8CC615217F48F700CE6E00 /* ContactExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactExtensions.swift; sourceTree = "<group>"; };
+		CA9FDB4A2180339F0009D046 /* SortContactExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortContactExtensions.swift; sourceTree = "<group>"; };
+		CA9FDB4C2180373C0009D046 /* AddressBookExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookExtentions.swift; sourceTree = "<group>"; };
+		CA9FDB50218051260009D046 /* SearchContactExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContactExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8CC5F2217F26DA00CE6E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA8CC5EC217F26DA00CE6E00 = {
+			isa = PBXGroup;
+			children = (
+				CA8CC5F7217F26DA00CE6E00 /* AddressBookConsole */,
+				CA8CC5F6217F26DA00CE6E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA8CC5F6217F26DA00CE6E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC5F5217F26DA00CE6E00 /* AddressBookConsole */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA8CC5F7217F26DA00CE6E00 /* AddressBookConsole */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC600217F272D00CE6E00 /* AddressBook */,
+				CA8CC601217F274900CE6E00 /* SearchContact */,
+				CA8CC602217F276000CE6E00 /* SortContact */,
+				CA8CC604217F279700CE6E00 /* Contact */,
+				CA8CC603217F277700CE6E00 /* ContactDictionary */,
+				CA8CC5F8217F26DA00CE6E00 /* main.swift */,
+			);
+			path = AddressBookConsole;
+			sourceTree = "<group>";
+		};
+		CA8CC600217F272D00CE6E00 /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC607217F281B00CE6E00 /* AddressBook.swift */,
+				CA9FDB4C2180373C0009D046 /* AddressBookExtentions.swift */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		CA8CC601217F274900CE6E00 /* SearchContact */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC609217F284F00CE6E00 /* SearchContact.swift */,
+				CA9FDB50218051260009D046 /* SearchContactExtension.swift */,
+			);
+			path = SearchContact;
+			sourceTree = "<group>";
+		};
+		CA8CC602217F276000CE6E00 /* SortContact */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC60B217F286900CE6E00 /* SortContact.swift */,
+				CA9FDB4A2180339F0009D046 /* SortContactExtensions.swift */,
+			);
+			path = SortContact;
+			sourceTree = "<group>";
+		};
+		CA8CC603217F277700CE6E00 /* ContactDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC60D217F288800CE6E00 /* ContactDictionary.swift */,
+			);
+			path = ContactDictionary;
+			sourceTree = "<group>";
+		};
+		CA8CC604217F279700CE6E00 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CC605217F27FE00CE6E00 /* Contact.swift */,
+				CA8CC615217F48F700CE6E00 /* ContactExtensions.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA8CC5F4217F26DA00CE6E00 /* AddressBookConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8CC5FC217F26DA00CE6E00 /* Build configuration list for PBXNativeTarget "AddressBookConsole" */;
+			buildPhases = (
+				CA8CC5F1217F26DA00CE6E00 /* Sources */,
+				CA8CC5F2217F26DA00CE6E00 /* Frameworks */,
+				CA8CC5F3217F26DA00CE6E00 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddressBookConsole;
+			productName = AddressBookConsole;
+			productReference = CA8CC5F5217F26DA00CE6E00 /* AddressBookConsole */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA8CC5ED217F26DA00CE6E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = finoit;
+				TargetAttributes = {
+					CA8CC5F4217F26DA00CE6E00 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA8CC5F0217F26DA00CE6E00 /* Build configuration list for PBXProject "AddressBookConsole" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA8CC5EC217F26DA00CE6E00;
+			productRefGroup = CA8CC5F6217F26DA00CE6E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA8CC5F4217F26DA00CE6E00 /* AddressBookConsole */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA8CC5F1217F26DA00CE6E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9FDB4E2180385A0009D046 /* SortContact.swift in Sources */,
+				CA9FDB4D2180373C0009D046 /* AddressBookExtentions.swift in Sources */,
+				CA8CC613217F3EA900CE6E00 /* Contact.swift in Sources */,
+				CA9FDB4F21804E150009D046 /* SearchContact.swift in Sources */,
+				CA8CC614217F3F4E00CE6E00 /* AddressBook.swift in Sources */,
+				CA9FDB4B2180339F0009D046 /* SortContactExtensions.swift in Sources */,
+				CA8CC619217F4F7A00CE6E00 /* ContactDictionary.swift in Sources */,
+				CA8CC5F9217F26DA00CE6E00 /* main.swift in Sources */,
+				CA9FDB51218051260009D046 /* SearchContactExtension.swift in Sources */,
+				CA8CC616217F48F700CE6E00 /* ContactExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA8CC5FA217F26DA00CE6E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA8CC5FB217F26DA00CE6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CA8CC5FD217F26DA00CE6E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CA8CC5FE217F26DA00CE6E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA8CC5F0217F26DA00CE6E00 /* Build configuration list for PBXProject "AddressBookConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CC5FA217F26DA00CE6E00 /* Debug */,
+				CA8CC5FB217F26DA00CE6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8CC5FC217F26DA00CE6E00 /* Build configuration list for PBXNativeTarget "AddressBookConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CC5FD217F26DA00CE6E00 /* Debug */,
+				CA8CC5FE217F26DA00CE6E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA8CC5ED217F26DA00CE6E00 /* Project object */;
+}

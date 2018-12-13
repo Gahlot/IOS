@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="_WayDesignUsingXib" customModuleProvider="target">
+            <connections>
+                <outlet property="forgetPasswordButton" destination="Afg-ve-xcQ" id="Okl-jw-LSV"/>
+                <outlet property="loginButton" destination="7Wa-dd-E2G" id="KxN-e3-Qo5"/>
+                <outlet property="loginIdTextField" destination="7L3-ug-4Di" id="KKh-fP-GhY"/>
+                <outlet property="lostDetailButton" destination="YXc-be-0u2" id="TVe-ry-Q5w"/>
+                <outlet property="passwordTextField" destination="t3F-eO-h8e" id="4g4-1Q-eEu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="d7E-sJ-rnr">
+                    <rect key="frame" x="13.5" y="87" width="348" height="378"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2Way-Design" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-ra-sYG">
+                            <rect key="frame" x="99" y="0.0" width="150" height="73"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="bYO-4S-G9W"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sm0-pw-V7Q">
+                            <rect key="frame" x="0.0" y="154" width="348" height="224"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="q83-8i-QIc">
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="191"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="finoit" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7L3-ug-4Di">
+                                            <rect key="frame" x="0.0" y="0.0" width="348" height="55"/>
+                                            <color key="backgroundColor" name="textFieldColor"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="55" id="B8G-fZ-Aki"/>
+                                            </constraints>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="username"/>
+                                            <connections>
+                                                <action selector="reload" destination="-2" eventType="editingDidEnd" id="xqb-W8-wUw"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="finoit" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-eO-h8e">
+                                            <rect key="frame" x="0.0" y="68" width="348" height="55"/>
+                                            <color key="backgroundColor" name="textFieldColor"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-dd-E2G">
+                                            <rect key="frame" x="0.0" y="136" width="348" height="55"/>
+                                            <color key="backgroundColor" name="buttonColor"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <state key="normal" title="LOGIN">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="Authentication:" destination="-1" eventType="touchUpInside" id="d9z-wB-Gfa"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="136" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efA-jh-eHW">
+                                    <rect key="frame" x="0.0" y="196" width="348" height="28"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-ve-xcQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Forget Password">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="forgetPassword:" destination="-1" eventType="touchUpInside" id="2yD-fG-Oha"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXc-be-0u2">
+                                            <rect key="frame" x="239" y="0.0" width="109" height="28"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Lost Login Details">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="lostLoginDetails:" destination="-1" eventType="touchUpInside" id="fwX-Gb-hjY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="348" id="A5I-C2-8Xc"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <constraints>
+                <constraint firstItem="d7E-sJ-rnr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NHj-1X-5gY"/>
+                <constraint firstItem="d7E-sJ-rnr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="67" id="QDH-GO-vye"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="64.5" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2Way-Design" width="230" height="73"/>
+        <namedColor name="backgroundColor">
+            <color red="0.10199999809265137" green="0.36100000143051147" blue="0.47499999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColor">
+            <color red="0.1879999936" green="0.43099999430000002" blue="0.59200000760000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textFieldColor">
+            <color red="0.25099998709999999" green="0.46299999949999998" blue="0.55699998139999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
