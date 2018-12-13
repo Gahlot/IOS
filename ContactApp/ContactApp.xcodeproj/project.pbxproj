@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA6DB9BC21BF8B7400491F85 /* BasicDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DB9BA21BF8B7400491F85 /* BasicDetailsTableViewCell.swift */; };
+		CA6DB9BD21BF8B7400491F85 /* BasicDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6DB9BB21BF8B7400491F85 /* BasicDetailsTableViewCell.xib */; };
+		CA6DB9BF21BF97E400491F85 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6DB9BE21BF97E400491F85 /* UITextFieldExtension.swift */; };
+		CA8BF2B621BA34F70011169E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2B521BA34F70011169E /* AppDelegate.swift */; };
+		CA8BF2BD21BA34F70011169E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8BF2BC21BA34F70011169E /* Assets.xcassets */; };
+		CA8BF2C021BA34F70011169E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BF2BE21BA34F70011169E /* LaunchScreen.storyboard */; };
+		CA8BF2C921BA40270011169E /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2C821BA40270011169E /* NSObjectExtension.swift */; };
+		CA8BF2CC21BA41810011169E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2CB21BA41810011169E /* Contact.swift */; };
+		CA8BF2D021BA43B50011169E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2CF21BA43B50011169E /* TabBarController.swift */; };
+		CA8BF2D321BA50190011169E /* Dialer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BF2D221BA50190011169E /* Dialer.storyboard */; };
+		CA8BF2D521BA50340011169E /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BF2D421BA50340011169E /* Contact.storyboard */; };
+		CA8BF2D721BA507B0011169E /* Favourite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8BF2D621BA507B0011169E /* Favourite.storyboard */; };
+		CA8BF2DA21BA56600011169E /* DialerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2D921BA56600011169E /* DialerViewController.swift */; };
+		CA8BF2DC21BA56810011169E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2DB21BA56810011169E /* ContactViewController.swift */; };
+		CA8BF2DE21BA56910011169E /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BF2DD21BA56910011169E /* FavouriteViewController.swift */; };
+		CAC283F621BE5E890097CF79 /* AddNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC283F421BE5E890097CF79 /* AddNumberTableViewCell.swift */; };
+		CAC283F721BE5E890097CF79 /* AddNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC283F521BE5E890097CF79 /* AddNumberTableViewCell.xib */; };
+		CAC283F921BE65140097CF79 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC283F821BE65140097CF79 /* AddContactViewController.swift */; };
+		CAC2840121BE92D80097CF79 /* ContactDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2840021BE92D80097CF79 /* ContactDictionary.swift */; };
+		CAC2840321BE93610097CF79 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2840221BE93610097CF79 /* AddressBook.swift */; };
+		CAC2840521BE94580097CF79 /* ContactNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2840421BE94580097CF79 /* ContactNumber.swift */; };
+		CAC2840821BE94950097CF79 /* ContactNumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2840721BE94950097CF79 /* ContactNumberType.swift */; };
+		CACEE59421C11374003B5831 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACEE59221C11374003B5831 /* FavouriteTableViewCell.swift */; };
+		CACEE59521C11374003B5831 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CACEE59321C11374003B5831 /* FavouriteTableViewCell.xib */; };
+		CAF8612621BFB29F0095B60B /* AddButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8612421BFB29F0095B60B /* AddButtonTableViewCell.swift */; };
+		CAF8612721BFB29F0095B60B /* AddButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF8612521BFB29F0095B60B /* AddButtonTableViewCell.xib */; };
+		CAF8612921BFE9B00095B60B /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8612821BFE9B00095B60B /* UITableViewCellExtension.swift */; };
+		CAF8C71121BBC54300830052 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8C71021BBC54300830052 /* ContactDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA6DB9BA21BF8B7400491F85 /* BasicDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		CA6DB9BB21BF8B7400491F85 /* BasicDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		CA6DB9BE21BF97E400491F85 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		CA8BF2B221BA34F70011169E /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8BF2B521BA34F70011169E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA8BF2BC21BA34F70011169E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA8BF2BF21BA34F70011169E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA8BF2C121BA34F70011169E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8BF2C821BA40270011169E /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		CA8BF2CB21BA41810011169E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		CA8BF2CF21BA43B50011169E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CA8BF2D221BA50190011169E /* Dialer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dialer.storyboard; sourceTree = "<group>"; };
+		CA8BF2D421BA50340011169E /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		CA8BF2D621BA507B0011169E /* Favourite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourite.storyboard; sourceTree = "<group>"; };
+		CA8BF2D921BA56600011169E /* DialerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialerViewController.swift; sourceTree = "<group>"; };
+		CA8BF2DB21BA56810011169E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		CA8BF2DD21BA56910011169E /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		CAC283F421BE5E890097CF79 /* AddNumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNumberTableViewCell.swift; sourceTree = "<group>"; };
+		CAC283F521BE5E890097CF79 /* AddNumberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNumberTableViewCell.xib; sourceTree = "<group>"; };
+		CAC283F821BE65140097CF79 /* AddContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		CAC2840021BE92D80097CF79 /* ContactDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDictionary.swift; sourceTree = "<group>"; };
+		CAC2840221BE93610097CF79 /* AddressBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		CAC2840421BE94580097CF79 /* ContactNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumber.swift; sourceTree = "<group>"; };
+		CAC2840721BE94950097CF79 /* ContactNumberType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNumberType.swift; sourceTree = "<group>"; };
+		CACEE59221C11374003B5831 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		CACEE59321C11374003B5831 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		CAF8612421BFB29F0095B60B /* AddButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonTableViewCell.swift; sourceTree = "<group>"; };
+		CAF8612521BFB29F0095B60B /* AddButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddButtonTableViewCell.xib; sourceTree = "<group>"; };
+		CAF8612821BFE9B00095B60B /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		CAF8C71021BBC54300830052 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8BF2AF21BA34F70011169E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA8BF2A921BA34F60011169E = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2B421BA34F70011169E /* ContactApp */,
+				CA8BF2B321BA34F70011169E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA8BF2B321BA34F70011169E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2B221BA34F70011169E /* ContactApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA8BF2B421BA34F70011169E /* ContactApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2CA21BA41230011169E /* Modal */,
+				CAC283FF21BE92980097CF79 /* Utilities */,
+				CA8BF2C721BA40030011169E /* Extensions */,
+				CAC283F321BE5E390097CF79 /* CustomTableViewCell */,
+				CA8BF2D121BA4D8F0011169E /* Storyboards */,
+				CA8BF2CE21BA435B0011169E /* TabBarController */,
+				CA8BF2D821BA56180011169E /* ViewControllers */,
+				CA8BF2B521BA34F70011169E /* AppDelegate.swift */,
+				CA8BF2BC21BA34F70011169E /* Assets.xcassets */,
+				CA8BF2BE21BA34F70011169E /* LaunchScreen.storyboard */,
+				CA8BF2C121BA34F70011169E /* Info.plist */,
+			);
+			path = ContactApp;
+			sourceTree = "<group>";
+		};
+		CA8BF2C721BA40030011169E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2C821BA40270011169E /* NSObjectExtension.swift */,
+				CA6DB9BE21BF97E400491F85 /* UITextFieldExtension.swift */,
+				CAF8612821BFE9B00095B60B /* UITableViewCellExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA8BF2CA21BA41230011169E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2CB21BA41810011169E /* Contact.swift */,
+				CAC2840421BE94580097CF79 /* ContactNumber.swift */,
+				CAC2840721BE94950097CF79 /* ContactNumberType.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CA8BF2CE21BA435B0011169E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2CF21BA43B50011169E /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		CA8BF2D121BA4D8F0011169E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2D221BA50190011169E /* Dialer.storyboard */,
+				CA8BF2D421BA50340011169E /* Contact.storyboard */,
+				CA8BF2D621BA507B0011169E /* Favourite.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CA8BF2D821BA56180011169E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BF2D921BA56600011169E /* DialerViewController.swift */,
+				CA8BF2DB21BA56810011169E /* ContactViewController.swift */,
+				CA8BF2DD21BA56910011169E /* FavouriteViewController.swift */,
+				CAF8C71021BBC54300830052 /* ContactDetailViewController.swift */,
+				CAC283F821BE65140097CF79 /* AddContactViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CAC283F321BE5E390097CF79 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAC283F421BE5E890097CF79 /* AddNumberTableViewCell.swift */,
+				CAC283F521BE5E890097CF79 /* AddNumberTableViewCell.xib */,
+				CA6DB9BA21BF8B7400491F85 /* BasicDetailsTableViewCell.swift */,
+				CA6DB9BB21BF8B7400491F85 /* BasicDetailsTableViewCell.xib */,
+				CAF8612421BFB29F0095B60B /* AddButtonTableViewCell.swift */,
+				CAF8612521BFB29F0095B60B /* AddButtonTableViewCell.xib */,
+				CACEE59221C11374003B5831 /* FavouriteTableViewCell.swift */,
+				CACEE59321C11374003B5831 /* FavouriteTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		CAC283FF21BE92980097CF79 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CAC2840021BE92D80097CF79 /* ContactDictionary.swift */,
+				CAC2840221BE93610097CF79 /* AddressBook.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA8BF2B121BA34F70011169E /* ContactApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8BF2C421BA34F70011169E /* Build configuration list for PBXNativeTarget "ContactApp" */;
+			buildPhases = (
+				CA8BF2AE21BA34F70011169E /* Sources */,
+				CA8BF2AF21BA34F70011169E /* Frameworks */,
+				CA8BF2B021BA34F70011169E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactApp;
+			productName = ContactApp;
+			productReference = CA8BF2B221BA34F70011169E /* ContactApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA8BF2AA21BA34F60011169E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = finoit;
+				TargetAttributes = {
+					CA8BF2B121BA34F70011169E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA8BF2AD21BA34F60011169E /* Build configuration list for PBXProject "ContactApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA8BF2A921BA34F60011169E;
+			productRefGroup = CA8BF2B321BA34F70011169E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA8BF2B121BA34F70011169E /* ContactApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA8BF2B021BA34F70011169E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8BF2C021BA34F70011169E /* LaunchScreen.storyboard in Resources */,
+				CA8BF2D521BA50340011169E /* Contact.storyboard in Resources */,
+				CACEE59521C11374003B5831 /* FavouriteTableViewCell.xib in Resources */,
+				CAC283F721BE5E890097CF79 /* AddNumberTableViewCell.xib in Resources */,
+				CAF8612721BFB29F0095B60B /* AddButtonTableViewCell.xib in Resources */,
+				CA6DB9BD21BF8B7400491F85 /* BasicDetailsTableViewCell.xib in Resources */,
+				CA8BF2D321BA50190011169E /* Dialer.storyboard in Resources */,
+				CA8BF2D721BA507B0011169E /* Favourite.storyboard in Resources */,
+				CA8BF2BD21BA34F70011169E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA8BF2AE21BA34F70011169E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC2840121BE92D80097CF79 /* ContactDictionary.swift in Sources */,
+				CAC2840821BE94950097CF79 /* ContactNumberType.swift in Sources */,
+				CA8BF2CC21BA41810011169E /* Contact.swift in Sources */,
+				CACEE59421C11374003B5831 /* FavouriteTableViewCell.swift in Sources */,
+				CAF8612921BFE9B00095B60B /* UITableViewCellExtension.swift in Sources */,
+				CAC2840521BE94580097CF79 /* ContactNumber.swift in Sources */,
+				CA8BF2C921BA40270011169E /* NSObjectExtension.swift in Sources */,
+				CA8BF2D021BA43B50011169E /* TabBarController.swift in Sources */,
+				CA8BF2DA21BA56600011169E /* DialerViewController.swift in Sources */,
+				CA8BF2DE21BA56910011169E /* FavouriteViewController.swift in Sources */,
+				CAC283F921BE65140097CF79 /* AddContactViewController.swift in Sources */,
+				CA6DB9BF21BF97E400491F85 /* UITextFieldExtension.swift in Sources */,
+				CAC283F621BE5E890097CF79 /* AddNumberTableViewCell.swift in Sources */,
+				CA8BF2B621BA34F70011169E /* AppDelegate.swift in Sources */,
+				CAC2840321BE93610097CF79 /* AddressBook.swift in Sources */,
+				CAF8C71121BBC54300830052 /* ContactDetailViewController.swift in Sources */,
+				CA6DB9BC21BF8B7400491F85 /* BasicDetailsTableViewCell.swift in Sources */,
+				CAF8612621BFB29F0095B60B /* AddButtonTableViewCell.swift in Sources */,
+				CA8BF2DC21BA56810011169E /* ContactViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA8BF2BE21BA34F70011169E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA8BF2BF21BA34F70011169E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA8BF2C221BA34F70011169E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA8BF2C321BA34F70011169E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA8BF2C521BA34F70011169E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ContactApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.ContactApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA8BF2C621BA34F70011169E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ContactApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.ContactApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA8BF2AD21BA34F60011169E /* Build configuration list for PBXProject "ContactApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8BF2C221BA34F70011169E /* Debug */,
+				CA8BF2C321BA34F70011169E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8BF2C421BA34F70011169E /* Build configuration list for PBXNativeTarget "ContactApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8BF2C521BA34F70011169E /* Debug */,
+				CA8BF2C621BA34F70011169E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA8BF2AA21BA34F60011169E /* Project object */;
+}

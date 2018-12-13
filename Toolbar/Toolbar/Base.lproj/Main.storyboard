@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Toolbar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdw-FV-ZLM">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="aUx-cM-Uvc"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="V5e-Rw-eOY"/>
+                                    <barButtonItem systemItem="play" id="SZm-Kl-ZIX">
+                                        <connections>
+                                            <action selector="playBarButtonAction:" destination="BYZ-38-t0r" id="z23-qO-wxP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zJJ-hO-DlQ"/>
+                                    <barButtonItem systemItem="fastForward" id="9qN-eB-Ut6"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2E-Bn-GxU">
+                                <rect key="frame" x="60" y="257.5" width="254" height="152"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="127"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pdw-FV-ZLM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="g0P-l4-WUT"/>
+                            <constraint firstItem="Q2E-Bn-GxU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hNn-H2-PG0"/>
+                            <constraint firstItem="Q2E-Bn-GxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nMZ-wa-r3e"/>
+                            <constraint firstItem="Pdw-FV-ZLM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p8o-4l-M1Q"/>
+                            <constraint firstItem="Pdw-FV-ZLM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vEC-oT-IKo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Q2E-Bn-GxU" id="EeB-RS-eiq"/>
+                        <outlet property="playBarButtonItem" destination="SZm-Kl-ZIX" id="vWv-Lz-JCm"/>
+                        <outlet property="toolbar" destination="Pdw-FV-ZLM" id="kfV-Uc-apM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

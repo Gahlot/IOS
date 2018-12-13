@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackView_Behaviour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="right" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-rs-LUs">
+                                <rect key="frame" x="16" y="669" width="343" height="89"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-Wb-5RF">
+                                        <rect key="frame" x="8" y="8" width="68.666666666666671" height="74"/>
+                                        <color key="backgroundColor" red="0.26759247470000003" green="0.89411764709999997" blue="0.78797879289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inq-iP-kbH">
+                                        <rect key="frame" x="179.33333333333334" y="8" width="68.333333333333343" height="74"/>
+                                        <color key="backgroundColor" red="0.19858839409097417" green="0.74095277351490485" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wB-yf-SPp">
+                                        <rect key="frame" x="264.66666666666669" y="8" width="68.666666666666686" height="74"/>
+                                        <color key="backgroundColor" red="0.50579747010282317" green="0.57417854905366417" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-OX-ova">
+                                        <rect key="frame" x="93.666666666666657" y="8" width="68.666666666666657" height="74"/>
+                                        <color key="backgroundColor" red="0.82739133883248728" green="0.39512711278984608" blue="0.40738345995770414" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4gU-OX-ova" firstAttribute="width" secondItem="QCD-Wb-5RF" secondAttribute="width" id="19E-RR-XgQ"/>
+                                    <constraint firstItem="QCD-Wb-5RF" firstAttribute="top" secondItem="NcR-rs-LUs" secondAttribute="topMargin" id="3FG-XM-SSg"/>
+                                    <constraint firstItem="5wB-yf-SPp" firstAttribute="leading" secondItem="Inq-iP-kbH" secondAttribute="trailing" constant="17" id="59L-on-2zA"/>
+                                    <constraint firstItem="4gU-OX-ova" firstAttribute="height" secondItem="QCD-Wb-5RF" secondAttribute="height" id="71h-xo-Q0J"/>
+                                    <constraint firstItem="QCD-Wb-5RF" firstAttribute="leading" secondItem="NcR-rs-LUs" secondAttribute="leadingMargin" id="A4G-8V-50p"/>
+                                    <constraint firstItem="QCD-Wb-5RF" firstAttribute="width" secondItem="NcR-rs-LUs" secondAttribute="width" multiplier="0.2" id="D23-a8-3vJ"/>
+                                    <constraint firstItem="5wB-yf-SPp" firstAttribute="height" secondItem="QCD-Wb-5RF" secondAttribute="height" id="XUV-Hd-MT3"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="top" secondItem="QCD-Wb-5RF" secondAttribute="top" id="Yzc-zL-DGC"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="leading" secondItem="4gU-OX-ova" secondAttribute="trailing" constant="17" id="bXw-UV-aco"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="top" secondItem="4gU-OX-ova" secondAttribute="top" id="gjN-T7-02v"/>
+                                    <constraint firstItem="4gU-OX-ova" firstAttribute="leading" secondItem="QCD-Wb-5RF" secondAttribute="trailing" constant="17" id="iRa-g9-jCv"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="width" secondItem="QCD-Wb-5RF" secondAttribute="width" id="j76-mC-e88"/>
+                                    <constraint firstAttribute="height" priority="750" constant="89" id="sqk-CZ-d9K"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="top" secondItem="5wB-yf-SPp" secondAttribute="top" id="tRL-n4-MbI"/>
+                                    <constraint firstItem="5wB-yf-SPp" firstAttribute="width" secondItem="QCD-Wb-5RF" secondAttribute="width" id="xNo-x9-xxF"/>
+                                    <constraint firstItem="Inq-iP-kbH" firstAttribute="height" secondItem="QCD-Wb-5RF" secondAttribute="height" id="z2u-WD-N8b"/>
+                                    <constraint firstItem="QCD-Wb-5RF" firstAttribute="centerY" secondItem="NcR-rs-LUs" secondAttribute="centerY" id="zIl-9F-Tqy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NcR-rs-LUs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SRG-g2-eHM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NcR-rs-LUs" secondAttribute="bottom" constant="20" id="cfx-t0-HbG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcR-rs-LUs" secondAttribute="trailing" constant="16" id="jf3-hl-fZ7"/>
+                            <constraint firstItem="NcR-rs-LUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r7e-fv-3l6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>

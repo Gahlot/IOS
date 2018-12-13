@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DatePickerView" customModule="FieldStar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEH-bZ-89w">
+                    <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AGJ-xT-JZf">
+                            <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                            <color key="backgroundColor" red="0.93555387335771878" green="0.94481678299492389" blue="0.94481678299492389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <date key="date" timeIntervalSinceReferenceDate="565263947.90874898">
+                                <!--2018-11-30 09:45:47 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="datePickerValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="u4h-eE-0tq"/>
+                            </connections>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HK-Dn-5Vo">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doneButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ftr-5U-Sca"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7HK-Dn-5Vo" firstAttribute="top" secondItem="oEH-bZ-89w" secondAttribute="top" id="0YM-9H-Xtq"/>
+                        <constraint firstAttribute="bottom" secondItem="AGJ-xT-JZf" secondAttribute="bottom" id="0cw-an-NUp"/>
+                        <constraint firstAttribute="trailing" secondItem="7HK-Dn-5Vo" secondAttribute="trailing" id="1Uf-4Q-4me"/>
+                        <constraint firstAttribute="trailing" secondItem="AGJ-xT-JZf" secondAttribute="trailing" id="4IV-nP-bWG"/>
+                        <constraint firstItem="7HK-Dn-5Vo" firstAttribute="leading" secondItem="oEH-bZ-89w" secondAttribute="leading" id="Zs0-Z8-zk1"/>
+                        <constraint firstItem="AGJ-xT-JZf" firstAttribute="leading" secondItem="oEH-bZ-89w" secondAttribute="leading" id="ldH-De-75M"/>
+                        <constraint firstItem="AGJ-xT-JZf" firstAttribute="top" secondItem="7HK-Dn-5Vo" secondAttribute="bottom" id="nqU-m1-PrI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oEH-bZ-89w" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="133-o6-wgp"/>
+                <constraint firstItem="oEH-bZ-89w" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="eaB-yq-ATa"/>
+                <constraint firstItem="oEH-bZ-89w" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nRa-hQ-0lh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentView" destination="oEH-bZ-89w" id="ZXJ-U1-PyZ"/>
+                <outlet property="datepicker" destination="AGJ-xT-JZf" id="Tgz-2c-mys"/>
+                <outlet property="doneButton" destination="7HK-Dn-5Vo" id="4Mq-mQ-fls"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="108.5"/>
+        </view>
+    </objects>
+</document>

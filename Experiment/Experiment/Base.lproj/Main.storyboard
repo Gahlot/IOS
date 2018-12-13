@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Experiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVY-KD-v1R">
+                                <rect key="frame" x="112.5" y="303.5" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.050403046884118487" green="0.56557585762710139" blue="0.64992465101522845" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="500" constant="60" id="YUr-2u-Lh0"/>
+                                    <constraint firstAttribute="width" priority="500" constant="150" id="Ymq-4i-azf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Sl-Eq-ura"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-TV-5nH">
+                                <rect key="frame" x="112.5" y="398" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.050403046880000003" green="0.56557585759999995" blue="0.64992465099999996" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6pg-n7-Pqr"/>
+                                    <constraint firstAttribute="width" constant="150" id="EdE-ig-KNc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Activity">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="activityPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWX-0i-JN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SVY-KD-v1R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jj7-PD-jpO"/>
+                            <constraint firstItem="wIs-TV-5nH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZC-y9-UAv"/>
+                            <constraint firstItem="wIs-TV-5nH" firstAttribute="top" secondItem="SVY-KD-v1R" secondAttribute="bottom" priority="750" constant="34.5" id="TlM-AL-oSr"/>
+                            <constraint firstItem="SVY-KD-v1R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btb-zF-p7U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="SVY-KD-v1R" id="NMF-fV-IMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
