@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8721A921D60050005B6BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721A821D60050005B6BC5 /* AppDelegate.swift */; };
+		CA8721B121D60050005B6BC5 /* PersistentAddressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA8721AF21D60050005B6BC5 /* PersistentAddressBook.xcdatamodeld */; };
+		CA8721B321D60050005B6BC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8721B221D60050005B6BC5 /* Assets.xcassets */; };
+		CA8721B621D60050005B6BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8721B421D60050005B6BC5 /* LaunchScreen.storyboard */; };
+		CA8721E321D6011C005B6BC5 /* AddressBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721BE21D6011B005B6BC5 /* AddressBook.swift */; };
+		CA8721E521D6011C005B6BC5 /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C221D6011B005B6BC5 /* AddContactViewController.swift */; };
+		CA8721E621D6011C005B6BC5 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C321D6011B005B6BC5 /* ContactDetailViewController.swift */; };
+		CA8721E721D6011C005B6BC5 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C421D6011B005B6BC5 /* ContactViewController.swift */; };
+		CA8721E821D6011C005B6BC5 /* DialerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C621D6011B005B6BC5 /* DialerViewController.swift */; };
+		CA8721EB21D6011C005B6BC5 /* AddButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721CB21D6011B005B6BC5 /* AddButtonTableViewCell.swift */; };
+		CA8721EC21D6011C005B6BC5 /* AddButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8721CC21D6011B005B6BC5 /* AddButtonTableViewCell.xib */; };
+		CA8721ED21D6011C005B6BC5 /* AddNumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721CD21D6011B005B6BC5 /* AddNumberTableViewCell.swift */; };
+		CA8721EE21D6011C005B6BC5 /* AddNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8721CE21D6011B005B6BC5 /* AddNumberTableViewCell.xib */; };
+		CA8721EF21D6011C005B6BC5 /* BasicDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721CF21D6011B005B6BC5 /* BasicDetailsTableViewCell.swift */; };
+		CA8721F021D6011C005B6BC5 /* BasicDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D021D6011B005B6BC5 /* BasicDetailsTableViewCell.xib */; };
+		CA8721F221D6011C005B6BC5 /* EditFavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D221D6011B005B6BC5 /* EditFavouriteTableViewCell.xib */; };
+		CA8721F321D6011C005B6BC5 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721D321D6011B005B6BC5 /* FavouriteTableViewCell.swift */; };
+		CA8721F421D6011C005B6BC5 /* FavouriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D421D6011B005B6BC5 /* FavouriteTableViewCell.xib */; };
+		CA8721F521D6011C005B6BC5 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D621D6011B005B6BC5 /* Contact.storyboard */; };
+		CA8721F621D6011C005B6BC5 /* Dialer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D721D6011B005B6BC5 /* Dialer.storyboard */; };
+		CA8721F821D6011C005B6BC5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721DA21D6011B005B6BC5 /* TabBarController.swift */; };
+		CA8721F921D6011C005B6BC5 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721DC21D6011B005B6BC5 /* NSObjectExtension.swift */; };
+		CA8721FA21D6011C005B6BC5 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721DD21D6011B005B6BC5 /* UITableViewCellExtension.swift */; };
+		CA8721FB21D6011C005B6BC5 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721DE21D6011B005B6BC5 /* UITextFieldExtension.swift */; };
+		CA87221121D60A33005B6BC5 /* ContactNumber+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87220B21D60A33005B6BC5 /* ContactNumber+CoreDataClass.swift */; };
+		CA87221221D60A33005B6BC5 /* ContactNumber+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87220C21D60A33005B6BC5 /* ContactNumber+CoreDataProperties.swift */; };
+		CA87221321D60A33005B6BC5 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87220D21D60A33005B6BC5 /* Contact+CoreDataClass.swift */; };
+		CA87221421D60A33005B6BC5 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87220E21D60A33005B6BC5 /* Contact+CoreDataProperties.swift */; };
+		CA87221521D60A33005B6BC5 /* ContactNumberType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87220F21D60A33005B6BC5 /* ContactNumberType+CoreDataClass.swift */; };
+		CA87221821D60E40005B6BC5 /* ContactNumberType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87221721D60E40005B6BC5 /* ContactNumberType+CoreDataProperties.swift */; };
+		CA87221B21D60EFA005B6BC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA87221A21D60EFA005B6BC5 /* CoreDataStack.swift */; };
+		CAA4EEB721DC78F0007A02AC /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C921D6011B005B6BC5 /* FavouriteViewController.swift */; };
+		CAA4EEB821DC84A0007A02AC /* Favourite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8721D821D6011B005B6BC5 /* Favourite.storyboard */; };
+		CAA4EEB921DC84C2007A02AC /* EditFavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721C821D6011B005B6BC5 /* EditFavouriteViewController.swift */; };
+		CAA4EEBA21DC8998007A02AC /* EditFavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8721D121D6011B005B6BC5 /* EditFavouriteTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA8721A521D60050005B6BC5 /* PersistentAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistentAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8721A821D60050005B6BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA8721B021D60050005B6BC5 /* PersistentAddressBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersistentAddressBook.xcdatamodel; sourceTree = "<group>"; };
+		CA8721B221D60050005B6BC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA8721B521D60050005B6BC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA8721B721D60050005B6BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8721BE21D6011B005B6BC5 /* AddressBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressBook.swift; sourceTree = "<group>"; };
+		CA8721C221D6011B005B6BC5 /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
+		CA8721C321D6011B005B6BC5 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		CA8721C421D6011B005B6BC5 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		CA8721C621D6011B005B6BC5 /* DialerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialerViewController.swift; sourceTree = "<group>"; };
+		CA8721C821D6011B005B6BC5 /* EditFavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFavouriteViewController.swift; sourceTree = "<group>"; };
+		CA8721C921D6011B005B6BC5 /* FavouriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		CA8721CB21D6011B005B6BC5 /* AddButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonTableViewCell.swift; sourceTree = "<group>"; };
+		CA8721CC21D6011B005B6BC5 /* AddButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddButtonTableViewCell.xib; sourceTree = "<group>"; };
+		CA8721CD21D6011B005B6BC5 /* AddNumberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNumberTableViewCell.swift; sourceTree = "<group>"; };
+		CA8721CE21D6011B005B6BC5 /* AddNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNumberTableViewCell.xib; sourceTree = "<group>"; };
+		CA8721CF21D6011B005B6BC5 /* BasicDetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		CA8721D021D6011B005B6BC5 /* BasicDetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		CA8721D121D6011B005B6BC5 /* EditFavouriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditFavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		CA8721D221D6011B005B6BC5 /* EditFavouriteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditFavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		CA8721D321D6011B005B6BC5 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		CA8721D421D6011B005B6BC5 /* FavouriteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteTableViewCell.xib; sourceTree = "<group>"; };
+		CA8721D621D6011B005B6BC5 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		CA8721D721D6011B005B6BC5 /* Dialer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dialer.storyboard; sourceTree = "<group>"; };
+		CA8721D821D6011B005B6BC5 /* Favourite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Favourite.storyboard; sourceTree = "<group>"; };
+		CA8721DA21D6011B005B6BC5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CA8721DC21D6011B005B6BC5 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		CA8721DD21D6011B005B6BC5 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		CA8721DE21D6011B005B6BC5 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		CA87220B21D60A33005B6BC5 /* ContactNumber+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactNumber+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CA87220C21D60A33005B6BC5 /* ContactNumber+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactNumber+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CA87220D21D60A33005B6BC5 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CA87220E21D60A33005B6BC5 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CA87220F21D60A33005B6BC5 /* ContactNumberType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactNumberType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CA87221721D60E40005B6BC5 /* ContactNumberType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactNumberType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CA87221A21D60EFA005B6BC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8721A221D60050005B6BC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA87219C21D60050005B6BC5 = {
+			isa = PBXGroup;
+			children = (
+				CA8721A721D60050005B6BC5 /* PersistentAddressBook */,
+				CA8721A621D60050005B6BC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA8721A621D60050005B6BC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721A521D60050005B6BC5 /* PersistentAddressBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA8721A721D60050005B6BC5 /* PersistentAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721A821D60050005B6BC5 /* AppDelegate.swift */,
+				CA87221921D60ED4005B6BC5 /* CoreDataStack */,
+				CA8721DF21D6011B005B6BC5 /* Modal */,
+				CA8721BD21D6011B005B6BC5 /* Utilities */,
+				CA8721DB21D6011B005B6BC5 /* Extensions */,
+				CA8721CA21D6011B005B6BC5 /* CustomTableViewCell */,
+				CA8721D521D6011B005B6BC5 /* Storyboards */,
+				CA8721D921D6011B005B6BC5 /* TabBarController */,
+				CA8721C021D6011B005B6BC5 /* ViewControllers */,
+				CA8721B221D60050005B6BC5 /* Assets.xcassets */,
+				CA8721B421D60050005B6BC5 /* LaunchScreen.storyboard */,
+				CA8721AF21D60050005B6BC5 /* PersistentAddressBook.xcdatamodeld */,
+				CA8721B721D60050005B6BC5 /* Info.plist */,
+			);
+			path = PersistentAddressBook;
+			sourceTree = "<group>";
+		};
+		CA8721BD21D6011B005B6BC5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721BE21D6011B005B6BC5 /* AddressBook.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CA8721C021D6011B005B6BC5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721C121D6011B005B6BC5 /* Contact */,
+				CA8721C521D6011B005B6BC5 /* Dialer */,
+				CA8721C721D6011B005B6BC5 /* Favourite */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA8721C121D6011B005B6BC5 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721C221D6011B005B6BC5 /* AddContactViewController.swift */,
+				CA8721C321D6011B005B6BC5 /* ContactDetailViewController.swift */,
+				CA8721C421D6011B005B6BC5 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		CA8721C521D6011B005B6BC5 /* Dialer */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721C621D6011B005B6BC5 /* DialerViewController.swift */,
+			);
+			path = Dialer;
+			sourceTree = "<group>";
+		};
+		CA8721C721D6011B005B6BC5 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721C821D6011B005B6BC5 /* EditFavouriteViewController.swift */,
+				CA8721C921D6011B005B6BC5 /* FavouriteViewController.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		CA8721CA21D6011B005B6BC5 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721CB21D6011B005B6BC5 /* AddButtonTableViewCell.swift */,
+				CA8721CC21D6011B005B6BC5 /* AddButtonTableViewCell.xib */,
+				CA8721CD21D6011B005B6BC5 /* AddNumberTableViewCell.swift */,
+				CA8721CE21D6011B005B6BC5 /* AddNumberTableViewCell.xib */,
+				CA8721CF21D6011B005B6BC5 /* BasicDetailsTableViewCell.swift */,
+				CA8721D021D6011B005B6BC5 /* BasicDetailsTableViewCell.xib */,
+				CA8721D121D6011B005B6BC5 /* EditFavouriteTableViewCell.swift */,
+				CA8721D221D6011B005B6BC5 /* EditFavouriteTableViewCell.xib */,
+				CA8721D321D6011B005B6BC5 /* FavouriteTableViewCell.swift */,
+				CA8721D421D6011B005B6BC5 /* FavouriteTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		CA8721D521D6011B005B6BC5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721D621D6011B005B6BC5 /* Contact.storyboard */,
+				CA8721D721D6011B005B6BC5 /* Dialer.storyboard */,
+				CA8721D821D6011B005B6BC5 /* Favourite.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CA8721D921D6011B005B6BC5 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721DA21D6011B005B6BC5 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		CA8721DB21D6011B005B6BC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA8721DC21D6011B005B6BC5 /* NSObjectExtension.swift */,
+				CA8721DD21D6011B005B6BC5 /* UITableViewCellExtension.swift */,
+				CA8721DE21D6011B005B6BC5 /* UITextFieldExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CA8721DF21D6011B005B6BC5 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				CA87220D21D60A33005B6BC5 /* Contact+CoreDataClass.swift */,
+				CA87220E21D60A33005B6BC5 /* Contact+CoreDataProperties.swift */,
+				CA87220B21D60A33005B6BC5 /* ContactNumber+CoreDataClass.swift */,
+				CA87220C21D60A33005B6BC5 /* ContactNumber+CoreDataProperties.swift */,
+				CA87220F21D60A33005B6BC5 /* ContactNumberType+CoreDataClass.swift */,
+				CA87221721D60E40005B6BC5 /* ContactNumberType+CoreDataProperties.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CA87221921D60ED4005B6BC5 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				CA87221A21D60EFA005B6BC5 /* CoreDataStack.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA8721A421D60050005B6BC5 /* PersistentAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8721BA21D60050005B6BC5 /* Build configuration list for PBXNativeTarget "PersistentAddressBook" */;
+			buildPhases = (
+				CA8721A121D60050005B6BC5 /* Sources */,
+				CA8721A221D60050005B6BC5 /* Frameworks */,
+				CA8721A321D60050005B6BC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistentAddressBook;
+			productName = PersistentAddressBook;
+			productReference = CA8721A521D60050005B6BC5 /* PersistentAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA87219D21D60050005B6BC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = finoit;
+				TargetAttributes = {
+					CA8721A421D60050005B6BC5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA8721A021D60050005B6BC5 /* Build configuration list for PBXProject "PersistentAddressBook" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA87219C21D60050005B6BC5;
+			productRefGroup = CA8721A621D60050005B6BC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA8721A421D60050005B6BC5 /* PersistentAddressBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA8721A321D60050005B6BC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8721B621D60050005B6BC5 /* LaunchScreen.storyboard in Resources */,
+				CA8721F521D6011C005B6BC5 /* Contact.storyboard in Resources */,
+				CA8721B321D60050005B6BC5 /* Assets.xcassets in Resources */,
+				CA8721F421D6011C005B6BC5 /* FavouriteTableViewCell.xib in Resources */,
+				CA8721F221D6011C005B6BC5 /* EditFavouriteTableViewCell.xib in Resources */,
+				CA8721F021D6011C005B6BC5 /* BasicDetailsTableViewCell.xib in Resources */,
+				CA8721EC21D6011C005B6BC5 /* AddButtonTableViewCell.xib in Resources */,
+				CA8721EE21D6011C005B6BC5 /* AddNumberTableViewCell.xib in Resources */,
+				CAA4EEB821DC84A0007A02AC /* Favourite.storyboard in Resources */,
+				CA8721F621D6011C005B6BC5 /* Dialer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA8721A121D60050005B6BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8721F921D6011C005B6BC5 /* NSObjectExtension.swift in Sources */,
+				CA8721F821D6011C005B6BC5 /* TabBarController.swift in Sources */,
+				CAA4EEB921DC84C2007A02AC /* EditFavouriteViewController.swift in Sources */,
+				CA8721FA21D6011C005B6BC5 /* UITableViewCellExtension.swift in Sources */,
+				CA8721E521D6011C005B6BC5 /* AddContactViewController.swift in Sources */,
+				CA8721E721D6011C005B6BC5 /* ContactViewController.swift in Sources */,
+				CA8721E321D6011C005B6BC5 /* AddressBook.swift in Sources */,
+				CA87221321D60A33005B6BC5 /* Contact+CoreDataClass.swift in Sources */,
+				CA8721B121D60050005B6BC5 /* PersistentAddressBook.xcdatamodeld in Sources */,
+				CA87221421D60A33005B6BC5 /* Contact+CoreDataProperties.swift in Sources */,
+				CA87221521D60A33005B6BC5 /* ContactNumberType+CoreDataClass.swift in Sources */,
+				CA8721EF21D6011C005B6BC5 /* BasicDetailsTableViewCell.swift in Sources */,
+				CAA4EEB721DC78F0007A02AC /* FavouriteViewController.swift in Sources */,
+				CA8721E821D6011C005B6BC5 /* DialerViewController.swift in Sources */,
+				CA87221221D60A33005B6BC5 /* ContactNumber+CoreDataProperties.swift in Sources */,
+				CA87221121D60A33005B6BC5 /* ContactNumber+CoreDataClass.swift in Sources */,
+				CA8721E621D6011C005B6BC5 /* ContactDetailViewController.swift in Sources */,
+				CAA4EEBA21DC8998007A02AC /* EditFavouriteTableViewCell.swift in Sources */,
+				CA8721FB21D6011C005B6BC5 /* UITextFieldExtension.swift in Sources */,
+				CA8721A921D60050005B6BC5 /* AppDelegate.swift in Sources */,
+				CA87221B21D60EFA005B6BC5 /* CoreDataStack.swift in Sources */,
+				CA87221821D60E40005B6BC5 /* ContactNumberType+CoreDataProperties.swift in Sources */,
+				CA8721ED21D6011C005B6BC5 /* AddNumberTableViewCell.swift in Sources */,
+				CA8721EB21D6011C005B6BC5 /* AddButtonTableViewCell.swift in Sources */,
+				CA8721F321D6011C005B6BC5 /* FavouriteTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA8721B421D60050005B6BC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA8721B521D60050005B6BC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA8721B821D60050005B6BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA8721B921D60050005B6BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA8721BB21D60050005B6BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PersistentAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.PersistentAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA8721BC21D60050005B6BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PersistentAddressBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finoit.PersistentAddressBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA8721A021D60050005B6BC5 /* Build configuration list for PBXProject "PersistentAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8721B821D60050005B6BC5 /* Debug */,
+				CA8721B921D60050005B6BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8721BA21D60050005B6BC5 /* Build configuration list for PBXNativeTarget "PersistentAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8721BB21D60050005B6BC5 /* Debug */,
+				CA8721BC21D60050005B6BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA8721AF21D60050005B6BC5 /* PersistentAddressBook.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA8721B021D60050005B6BC5 /* PersistentAddressBook.xcdatamodel */,
+			);
+			currentVersion = CA8721B021D60050005B6BC5 /* PersistentAddressBook.xcdatamodel */;
+			path = PersistentAddressBook.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CA87219D21D60050005B6BC5 /* Project object */;
+}
