@@ -1,0 +1,9 @@
+platform :ios, '10.0'
+
+target 'MedicalAssistant' do
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'Eureka'
+
+end

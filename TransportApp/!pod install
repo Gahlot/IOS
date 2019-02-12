@@ -1,0 +1,6 @@
+platform :ios, '10.0'
+target 'TransportApp' do
+  use_frameworks!
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+end
