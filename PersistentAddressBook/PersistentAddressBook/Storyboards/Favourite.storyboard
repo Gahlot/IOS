@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Faviourites-->
+        <scene sceneID="Wgq-dr-Qyu">
+            <objects>
+                <viewController storyboardIdentifier="FavouriteViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eWh-vz-KHE" userLabel="Faviourites" customClass="FavouriteViewController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KPa-ig-dLw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Ch-vhR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="881-NE-sNp" firstAttribute="trailing" secondItem="Fgg-Ch-vhR" secondAttribute="trailing" id="DIj-3A-C65"/>
+                            <constraint firstItem="Fgg-Ch-vhR" firstAttribute="top" secondItem="881-NE-sNp" secondAttribute="top" id="IET-a8-3Vo"/>
+                            <constraint firstItem="881-NE-sNp" firstAttribute="bottom" secondItem="Fgg-Ch-vhR" secondAttribute="bottom" id="i6A-pS-hHw"/>
+                            <constraint firstItem="Fgg-Ch-vhR" firstAttribute="leading" secondItem="881-NE-sNp" secondAttribute="leading" id="kYU-jp-j9I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="881-NE-sNp"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Fgg-Ch-vhR" id="rFB-uC-cmj"/>
+                        <segue destination="HK7-JE-8F2" kind="show" identifier="EditFavourite" id="iw8-9R-O8M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GB9-zr-R1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="126"/>
+        </scene>
+        <!--Edit Favourite View Controller-->
+        <scene sceneID="4Wv-7R-ZLu">
+            <objects>
+                <viewController storyboardIdentifier="EditFavouriteViewController" id="HK7-JE-8F2" customClass="EditFavouriteViewController" customModule="ContactApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HpD-r9-Z61">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rkr-wU-0VZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rkr-wU-0VZ" firstAttribute="top" secondItem="wlb-1d-wYZ" secondAttribute="top" id="5Zu-1l-0Bz"/>
+                            <constraint firstItem="wlb-1d-wYZ" firstAttribute="trailing" secondItem="rkr-wU-0VZ" secondAttribute="trailing" id="9R9-Oa-K27"/>
+                            <constraint firstItem="wlb-1d-wYZ" firstAttribute="bottom" secondItem="rkr-wU-0VZ" secondAttribute="bottom" id="qqO-eo-6kE"/>
+                            <constraint firstItem="rkr-wU-0VZ" firstAttribute="leading" secondItem="wlb-1d-wYZ" secondAttribute="leading" id="tG2-qF-NOE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wlb-1d-wYZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="rkr-wU-0VZ" id="doz-OE-pSb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0vb-3l-wJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="127"/>
+        </scene>
+    </scenes>
+</document>
