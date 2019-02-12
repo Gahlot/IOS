@@ -1,0 +1,6 @@
+platform :ios, '10.0'
+target 'SheetAPIDemo' do
+  use_frameworks!
+    pod 'GoogleAPIClientForREST/Sheets'
+    pod 'Google/SignIn'
+end
